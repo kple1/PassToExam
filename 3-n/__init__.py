@@ -1,11 +1,19 @@
-def sum_all(start, end):
-    output = 0
-    for i in range(start, end + 1):
-        output += i
-    return output
+counter = 0
 
 
-print("0 to 100:", sum_all(0, 100))
-print("0 to 1000:", sum_all(0, 1000))
-print("50 to 100:", sum_all(50, 100))
-print("500 to 1000:", sum_all(50, 1000))
+def fibonacci(n):
+    print("fibonacci({})를 구합니다.".format(n))
+    global counter
+    counter += 1
+
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+fibonacci(1000)
+print("---")
+print("fibonacci(10) 계산에 활용된 덧셈 횟수는 {}번 입니다.".format(counter))
