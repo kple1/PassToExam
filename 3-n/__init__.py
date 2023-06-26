@@ -1,19 +1,9 @@
-counter = 0
-
-
-def fibonacci(n):
-    print("fibonacci({})를 구합니다.".format(n))
-    global counter
-    counter += 1
-
-    if n == 1:
-        return 1
-    if n == 2:
-        return 1
+try:
+    coding = int(input("정수 입력 : "))
+    if coding == 1:
+        print("1 입니다.")
     else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
+        print("1이 아닙니다.")
 
-
-fibonacci(1000)
-print("---")
-print("fibonacci(10) 계산에 활용된 덧셈 횟수는 {}번 입니다.".format(counter))
+except:
+    print("정수 입력 input함수의 형태는 계속 int 타입 입니다.")
