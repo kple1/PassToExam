@@ -5,8 +5,10 @@ fourStudent = int(input("4번 학생 점수 입력 : "))
 fiveStudent = int(input("5번 학생 점수 입력 : "))
 
 List = [oneStudent, twoStudent, threeStudent, fourStudent, fiveStudent]
+n = 0
 
 for i in List:
+    n += 1
     if i >= 80:
-        print("{}번 학생의 점수는 {}점 이므로 합격입니다.".format())
+        print("{}번 학생의 점수는 {}점 이므로 합격입니다.".format(n, i))
 
