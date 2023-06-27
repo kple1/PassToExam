@@ -9,8 +9,12 @@ List = [var2]
 while True:
     var0 += 1
     var1 = input("{}번째 시도 : ".format(var0))
+
     if var1 == "미리보기":
         print(List)
+    if var1 == "그만할래":
+        print("그래 잘가~!!!")
+        break
 
     elif int(var1) > var2:
         print("입력하신 숫자보다 작습니다.")
