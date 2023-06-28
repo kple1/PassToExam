@@ -5,6 +5,3 @@ for i in List:
             print(j, end=" ")
     else:
         print(i, end=" ")
-
-    #if type(i) != list:
-    #print(i, end=" ")
